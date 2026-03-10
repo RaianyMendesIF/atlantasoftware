@@ -24,10 +24,13 @@ border:none;
 background:#53007a;
 }
 
-.hero{
+section{
 min-height:100vh;
 display:flex;
 align-items:center;
+}
+
+.hero{
 background-image:
 linear-gradient(rgba(28,15,35,0.85),rgba(28,15,35,0.85)),
 url("../View/image/world.png");
@@ -35,6 +38,7 @@ background-size:cover;
 background-position:center;
 color:white;
 }
+
 
 .section-title{
 color:var(--primary);
@@ -63,4 +67,117 @@ box-shadow:0 10px 30px rgba(0,0,0,0.1);
 
 footer{
 border-top:1px solid rgba(102,0,153,0.2);
+}
+
+.carousel-control-prev,
+.carousel-control-next{
+width:50px;
+height:50px;
+background:#660099;
+border-radius:50%;
+top:50%;
+transform:translateY(-50%);
+}
+
+/* ===== CARROSSEL PROJETOS ===== */
+
+#projetos{
+background:#f7f5f8;
+}
+
+/* card do projeto */
+
+.projeto-card{
+background:white;
+border-radius:20px;
+padding:30px;
+box-shadow:0 15px 35px rgba(0,0,0,0.1);
+border-top:5px solid #660099;
+}
+
+.projeto-card img{
+border-radius:15px;
+height:300px;
+object-fit:cover;
+}
+
+/* titulo */
+
+.projeto-card h3{
+color:#660099;
+font-weight:700;
+}
+
+/* nome da empresa */
+
+.projeto-cliente{
+font-weight:600;
+color:#444;
+}
+
+/* lista */
+
+.projeto-card ul{
+padding-left:18px;
+}
+
+.projeto-card ul li{
+margin-bottom:6px;
+}
+
+/* ===== SETAS DO CARROSSEL ===== */
+
+/* posição das setas */
+
+.carousel-control-prev{
+left:-80px;
+}
+
+.carousel-control-next{
+right:-80px;
+}
+
+/* estilo das setas */
+
+.carousel-control-prev,
+.carousel-control-next{
+width:55px;
+height:55px;
+background:#660099;
+border-radius:50%;
+top:50%;
+transform:translateY(-50%);
+opacity:1;
+}
+
+/* cor da seta */
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon{
+filter:invert(1);
+}
+
+/* efeito hover */
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover{
+background:#4b0073;
+}
+
+/* responsivo */
+
+@media (max-width: 768px){
+
+.carousel-control-prev{
+left:-10px;
+}
+
+.carousel-control-next{
+right:-10px;
+}
+
+.projeto-card img{
+height:200px;
+}
+
 }
