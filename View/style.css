@@ -25,10 +25,22 @@ border-bottom:1px solid rgba(102,0,153,0.2);
 background:var(--primary);
 color:white;
 border:none;
+box-shadow: 0 4px 8px 0 rgba(56, 56, 56, 0.5);
+transition: 0.3s;
 }
 
 .btn-primary-custom:hover{
 background:#53007a;
+transform: scale(1.1);
+}
+
+.btn-outline-light{
+box-shadow: 0 4px 8px 0 rgba(56, 56, 56, 0.5);
+transition: 0.3s;
+}
+
+.btn-outline-light:hover{
+transform: scale(1.1);
 }
 
 section{
@@ -76,15 +88,6 @@ footer{
 border-top:1px solid rgba(102,0,153,0.2);
 }
 
-.carousel-control-prev,
-.carousel-control-next{
-width:50px;
-height:50px;
-background:#660099;
-border-radius:50%;
-top:50%;
-transform:translateY(-50%);
-}
 
 /* ===== CARROSSEL PROJETOS ===== */
 
@@ -98,8 +101,13 @@ background:#f7f5f8;
 background:white;
 border-radius:20px;
 padding:30px;
-box-shadow:0 15px 35px rgba(0,0,0,0.1);
+box-shadow: 0 4px 8px 0 rgba(56, 56, 56, 0.5);
+transition: 0.3s;
 border-top:5px solid #660099;
+}
+
+.projeto-card:hover{
+transform: scale(1.05);
 }
 
 .projeto-card img{
