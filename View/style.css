@@ -14,6 +14,13 @@ backdrop-filter:blur(10px);
 border-bottom:1px solid rgba(102,0,153,0.2);
 }
 
+.navbar-brand-custom {
+    display: flex !important; /* Força o uso de Flexbox */
+    align-items: center;      /* Centraliza verticalmente icon e texto */
+    padding-left: 0;          /* Reseta o padding padrão do Bootstrap */
+    min-width: 250px;         /* Define uma largura mínima para a brand */
+}
+
 .btn-primary-custom{
 background:var(--primary);
 color:white;
@@ -181,3 +188,4 @@ height:200px;
 }
 
 }
+
