@@ -1,4 +1,4 @@
-# 🚀 Meu Portfólio de Projetos
+# 🚀 Atlanta Software
 
 Este é o site pessoal da empresa Atlanta, onde são apresentados os softwares desenvolvidos pela mesmo, como gestão docente, bancária e sistema médico. O site foi construído com foco em ser leve, funcional e de fácil hospedagem gratuita.
 
