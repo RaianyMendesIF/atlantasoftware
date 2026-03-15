@@ -52,7 +52,7 @@ align-items:center;
 .hero{
 background-image:
 linear-gradient(rgba(28,15,35,0.85),rgba(28,15,35,0.85)),
-url("../View/image/world.png");
+url("../img/world.png");
 background-size:cover;
 background-position:center;
 color:white;
@@ -181,10 +181,10 @@ background:#4b0073;
 
 .whatsapp-float {
     position: fixed;
-    width: 60px;
-    height: 60px;
-    bottom: 20px; /* Distância da borda inferior */
-    right: 20px;  /* Distância da borda direita */
+    width: 50px;
+    height: 50px;
+    bottom: 60px; /* Distância da borda inferior */
+    right: 30px;  /* Distância da borda direita */
     background-color: #25d366;
     color: #FFF;
     border-radius: 50px;

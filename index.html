@@ -5,11 +5,12 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<link rel="icon" href="./View/img/logonav.png">
 <title>Atlanta Software - O futuro em ascensão</title>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 
-<link rel="stylesheet" href="style.css">
-<link rel="stylesheet" href="script.js">
+<link rel="stylesheet" href="./View/css/style.css">
+
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
@@ -21,7 +22,7 @@
 <nav class="navbar navbar-expand-lg fixed-top">
     <div class="container">
         <a class="navbar-brand fw-bold navbar-brand-custom" href="#home">
-            <img src="../View/image/logonav.png" alt="Logo Atlanta" width="40" height="40" class="d-inline-block align-text-top me-2">
+            <img src="./View/img/logonav.png" alt="Logo Atlanta" width="40" height="40" class="d-inline-block align-text-top me-2">
             Atlanta <span style="color:#660099;">Software</span> 
         </a>
 
@@ -102,7 +103,7 @@
             <div class="col-md-6 col-lg-4">
                 <div class="card projeto-card h-100">
 
-                    <img src="../View/image/PROJ1.jpg"
+                    <img src="./View/img/PROJ1.jpg"
                     class="card-img-top">
 
                     <div class="card-body">
@@ -128,7 +129,7 @@
             <div class="col-md-6 col-lg-4">
                 <div class="card projeto-card h-100">
 
-                    <img src="../View/image/PROJ2.png"
+                    <img src="./View/img/PROJ2.png"
                     class="card-img-top">
 
                     <div class="card-body">
@@ -152,7 +153,7 @@
             <div class="col-md-6 col-lg-4">
                 <div class="card projeto-card h-100">
 
-                    <img src="../View/image/PROJ3.png"
+                    <img src="./View/img/PROJ3.png"
                     class="card-img-top">
 
                     <div class="card-body">
@@ -183,7 +184,7 @@
         <div class="row align-items-center g-5">
                 <div class="col-lg-6">
                     <img class="img-fluid rounded-2 shadow"
-                    src="../View/image/modelo.jpg">
+                    src="./View/img/modelo.jpg">
                 </div>
 
                 <div class="col-lg-6 text-white">
@@ -279,35 +280,38 @@
 
             <div class="col-lg-6">
                 <div class="contact-card p-4">
-                    <form>
-                        <div class="mb-3">
-                            <label class="form-label">Nome</label>
-                            <input type="text" class="form-control">
-                        </div>
+                    <form id="meuFormulario">
+                    <div class="mb-3">
+                        <label class="form-label">Nome</label>
+                        <input type="text" name="nome" class="form-control" required>
+                    </div>
 
-                        <div class="mb-3">
-                            <label class="form-label">Email</label>
-                            <input type="email" class="form-control">
-                        </div>
+                    <div class="mb-3">
+                        <label class="form-label">Email</label>
+                        <input type="email" name="email" class="form-control" required>
+                    </div>
 
-                        <div class="mb-3">
-                            <label class="form-label">Assunto</label>
-                            <select class="form-select">
-                                <option>Novo Projeto</option>
-                                <option>Consultoria</option>
-                                <option>Suporte</option>
-                            </select>
-                        </div>
+                    <div class="mb-3">
+                        <label class="form-label">Assunto</label>
+                        <select name="assunto" class="form-select">
+                            <option value="Novo Projeto">Novo Projeto</option>
+                            <option value="Consultoria">Consultoria</option>
+                            <option value="Suporte">Suporte</option>
+                        </select>
+                    </div>
 
-                        <div class="mb-3">
-                            <label class="form-label">Mensagem</label>
-                            <textarea class="form-control" rows="4"></textarea>
-                        </div>
+                    <div class="mb-3">
+                        <label class="form-label">Mensagem</label>
+                        <textarea name="mensagem" class="form-control" rows="4" required></textarea>
+                    </div>
 
-                        <button class="btn btn-primary-custom w-100">
-                            Enviar Solicitação
-                        </button>
-                    </form>
+                    <button type="submit" id="btnEnviar" class="btn btn-primary-custom text-white w-100">
+                        Enviar Solicitação
+                    </button>
+                </form>
+                <div id="mensagemSucesso" style="display:none;" class="alert alert-success mt-3">
+                    Obrigado! Sua mensagem foi enviada com sucesso.
+                </div>
                 </div>
             </div>
         </div>
@@ -340,6 +344,6 @@
 </a>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-
+<script src="View/js/script.js"></script>
 </body>
 </html>
