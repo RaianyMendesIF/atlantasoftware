@@ -31,7 +31,7 @@ transition: 0.3s;
 
 .btn-primary-custom:hover{
 background:#53007a;
-transform: scale(1.1);
+transform: scale(1.03);
 }
 
 .btn-outline-light{
@@ -200,7 +200,7 @@ background:#4b0073;
 
 .whatsapp-float:hover {
     transform: scale(1.1); /* Efeito de aumentar ao passar o mouse */
-    background-color: #128c7e;
+    
 }
 
 .whatsapp-float img {
